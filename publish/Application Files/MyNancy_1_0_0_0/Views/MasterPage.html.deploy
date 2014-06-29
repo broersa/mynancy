@@ -1,0 +1,25 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>@Model.MasterPage.Title</title>
+	<link rel="stylesheet" type="text/css" href="/Content/site.css" />
+	@Section['Scripts']
+</head>
+<body>
+    <section>
+        <div id="content">
+        <h1>Last visit: @Model.MasterPage.LastVisit</h1>
+        @If.MasterPage.IsAuthenticated
+            <a href="/login">Login</a>
+        @EndIf
+        @IfNot.MasterPage.IsAuthenticated
+            <form id="logoutform" method="post" action="/logout">
+                <input type=submit value="Logout" />
+            </form>
+        @EndIf
+        @Section['Content']
+        </div>
+    </section>
+</body>
+</html>

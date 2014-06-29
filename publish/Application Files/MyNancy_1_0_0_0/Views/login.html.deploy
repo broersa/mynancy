@@ -1,0 +1,18 @@
+﻿@Master['MasterPage']
+@Section['Scripts']
+@EndSection
+@Section['Content']
+    <h1>Login</h1>
+    <form method="POST">
+        Username <input type="text" name="Username" />
+        <br />
+        Password <input name="Password" type="password" />
+        <br />
+        Remember Me <input name="RememberMe" type="checkbox" value="True" />
+        <br />
+        <input type="submit" value="Login" />
+    </form>
+    @If.Errored
+        <div>Invalid Username or Password</div>
+    @EndIf
+@EndSection

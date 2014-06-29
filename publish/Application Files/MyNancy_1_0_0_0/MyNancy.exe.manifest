@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="MyNancy.exe" version="1.0.0.0" publicKeyToken="9d2c8e3b571b9439" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MyNancy" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="MyNancy.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MyNancy.exe" size="119808">
+      <assemblyIdentity name="MyNancy" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>BqMsxL2nD9MIjmV3di4jTIi8Nvs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nancy.dll" size="683008">
+      <assemblyIdentity name="Nancy" version="0.10.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>F3qQSsD3f/8GWG4oYnKDmyCFou0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nancy.Authentication.Forms.dll" size="12288">
+      <assemblyIdentity name="Nancy.Authentication.Forms" version="0.10.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ek6a7MV4AxdQCxphBq2Jz8K1nu8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Nancy.Hosting.Self.dll" size="10240">
+      <assemblyIdentity name="Nancy.Hosting.Self" version="0.10.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>vTyPDvxV7d1xOMRi+GQMn1861yU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="content\images\favicon.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>04a3my6lUvctbQGwUxb/iKoODJA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="content\myscript.js" size="55">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>sSGnwaB/9dHA+I9Z0LTqQD+7Bwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="content\site.css" size="44">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vFGzi5c3EyaK7S+pCml8+LqYkoY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Views\admin\index.html" size="291">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>pIhBJDIeeNBju7cnzYy+b5zQq7c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Views\index.html" size="154">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>btZjUeZh/nF77eA5aF1su92abhs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Views\login.html" size="520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zHVQ7SyaJe8/UZnD0rUj+Jiir1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Views\MasterPage.html" size="738">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UYiy4pvkP7pPJJXcYaFUAAIfvRg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=broersa-VAIO\broersa" issuerKeyHash="8fdf9034d7f8dece8d0873904998a4d6982f9490" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>TNWTV1cjv3XHfZh61ilCWljItPs=</DigestValue></Reference></SignedInfo><SignatureValue>Wzn+sMqtXAGNH2U+aJOLfG6W+a5EoQxbgvLYdbUdAGoHu0lIk2lFa4b/SeFsHToDh7l5p9RqvSWRqNw2PHtoU+RyVb5kcZSfZK+6Wq3RPm3QR4KY2irxK2eKO5tfxP5tayvGM3fNPJjmoB0JT2AIyxyLgcq7CknovrCfjDgomcE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wZDh9ZNt08hFfVhZKtzl4MEqYmiFmYmOWwNLkJmiTUMTWCmRytuUuXx+F7qv3CdJJpObArj1x2s67R0fMJXErjU/5pMDrCzsTjiiglJXKXT69P8RxFux2vP3MVlaBwi88II7Bei845d+ZlcqQeIKDlvYDUyDqn58qq+avcilNtc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fbb4c8585a4229d67a987dc775bf23575793d54c" Description="" Url=""><as:assemblyIdentity name="MyNancy.exe" version="1.0.0.0" publicKeyToken="9d2c8e3b571b9439" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=broersa-VAIO\broersa</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ajEve72t9ADwR6Of8+fw4smWVfI=</DigestValue></Reference></SignedInfo><SignatureValue>UVEwBBcKpWP2R5zfiHRxBrgbvSofC+Vj8VVQRu8dPf8xfiSBNOpYYFlmZzjNOH/vqfFPpstJRKIgR0OR58h8sZdLoNjBXtAtt0ul7mJgmTBYxnsYh0DWoBSz4+ia5ndG9YEYv3GapFf179nNlw+Ern4Uzm3n+2MH4zGDGPG5cak=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wZDh9ZNt08hFfVhZKtzl4MEqYmiFmYmOWwNLkJmiTUMTWCmRytuUuXx+F7qv3CdJJpObArj1x2s67R0fMJXErjU/5pMDrCzsTjiiglJXKXT69P8RxFux2vP3MVlaBwi88II7Bei845d+ZlcqQeIKDlvYDUyDqn58qq+avcilNtc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQQiPyt7rUp7NMk/nmT7WwZzANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigAYgByAG8AZQByAHMAYQAtAFYAQQBJAE8AXABiAHIAbwBlAHIAcwBhMB4XDTEyMDQwMjA5NTg0NloXDTEzMDQwMjE1NTg0NlowMzExMC8GA1UEAx4oAGIAcgBvAGUAcgBzAGEALQBWAEEASQBPAFwAYgByAG8AZQByAHMAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwZDh9ZNt08hFfVhZKtzl4MEqYmiFmYmOWwNLkJmiTUMTWCmRytuUuXx+F7qv3CdJJpObArj1x2s67R0fMJXErjU/5pMDrCzsTjiiglJXKXT69P8RxFux2vP3MVlaBwi88II7Bei845d+ZlcqQeIKDlvYDUyDqn58qq+avcilNtcCAwEAATANBgkqhkiG9w0BAQUFAAOBgQB2pQrN3e0/E/4v5ajtt/hsMqqx8e6TiKpI5mMmwweUvGhSt+233OqJrUGyiyjuoFy4zEWVMpxfbM+UnDyC8kySf9jjpOMd1N/USuj8fUXXjQp2it5dKI2fSYSWj3n8AxpqFUVZMZK0Q7fqnKoRLcmJHoGhNKtyZR584tw9g6zEyQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

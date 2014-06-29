@@ -1,0 +1,8 @@
+﻿@Master['MasterPage']
+@Section['Scripts']
+    <script src="@Path['~/Content/myscript.js'];" type="text/javascript"></script>
+@EndSection
+@Section['Content']
+    <h1>Hello @Model.Index.UserName!</h1>
+    <input type="button" onclick="myalert()" value="Demo scripts" />
+@EndSection
